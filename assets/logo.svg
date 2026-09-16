@@ -1,10 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 70" role="img" aria-labelledby="title desc">
-  <title id="title">Lalit</title>
-  <desc id="desc">Lalit Enterprises wordmark</desc>
-  <text x="8" y="52"
-        font-family="Arial, Helvetica, sans-serif"
-        font-size="52"
-        font-weight="800"
-        letter-spacing="-2.2"
-        fill="#c91f2b">Lalit</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<rect width="120" height="120" rx="22" fill="#c91f2b"/>
+<path d="M31 28h13v51c0 9 5 13 14 13 10 0 15-5 15-14V28h13v51c0 17-10 27-28 27S31 96 31 79V28z" fill="#fff"/>
+<path d="M22 96c22-10 54-10 76 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" opacity=".7"/>
 </svg>
