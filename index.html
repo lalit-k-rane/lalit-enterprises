@@ -63,7 +63,7 @@
       <p class="eyebrow">ABOUT US</p>
       <h2>Built on experience. Focused on packaging.</h2>
       
-    <!-- Company Vision Box -->
+      <!-- Company Vision Box -->
       <div class="vision-card">
         <span class="vision-tag">OUR VISION</span>
         <blockquote class="vision-quote">
@@ -102,15 +102,16 @@
         <p class="eyebrow">PLANT &amp; INFRASTRUCTURE</p>
         <h2>Our Manufacturing Machinery</h2>
       </div>
-      <p>Equipped with high-precision printing, solvent-based lamination, slitting, and specialised pouch-making lines to deliver superior flexible packaging.</p>
+      <p>Click any machine photo to preview in high resolution with complete specifications.</p>
     </div>
 
     <div class="machine-grid">
       <!-- 1. Rotogravure Printing -->
-      <article class="machine-card">
+      <article class="machine-card" data-lightbox>
         <div class="machine-photo">
           <img src="assets/machines/rotogravure-7colour.jpg" alt="7 Colour Rotogravure Printing Machine at Lalit Enterprises">
           <span class="machine-badge">PRINTING</span>
+          <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
         </div>
         <div class="machine-info">
           <h3>7-Colour Rotogravure Printing Machine</h3>
@@ -124,10 +125,11 @@
       </article>
 
       <!-- 2. Solvent-based Lamination -->
-      <article class="machine-card">
+      <article class="machine-card" data-lightbox>
         <div class="machine-photo">
           <img src="assets/machines/solvent-lamination.jpg" alt="Solvent-based Lamination Machine 1000mm width">
           <span class="machine-badge">LAMINATION</span>
+          <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
         </div>
         <div class="machine-info">
           <h3>Solvent-Based Lamination Machine</h3>
@@ -141,10 +143,11 @@
       </article>
 
       <!-- 3. Slitting Machine -->
-      <article class="machine-card">
+      <article class="machine-card" data-lightbox>
         <div class="machine-photo">
           <img src="assets/machines/slitting-machine.jpg" alt="Slitting machine 1100mm with electronic web guiding system">
           <span class="machine-badge">CONVERTING</span>
+          <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
         </div>
         <div class="machine-info">
           <h3>Precision Slitting Machine</h3>
@@ -158,10 +161,11 @@
       </article>
 
       <!-- 4. Pouching Line -->
-      <article class="machine-card">
+      <article class="machine-card" data-lightbox>
         <div class="machine-photo">
           <img src="assets/machines/pouching-machine.jpg" alt="XL Center seal and three side seal pouching machine">
           <span class="machine-badge">POUCH MAKING</span>
+          <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
         </div>
         <div class="machine-info">
           <h3>XL Pouching &amp; Sealing Machines</h3>
@@ -203,36 +207,40 @@
       </p>
     </div>
     <div class="sample-grid">
-      <figure class="sample-image">
+      <figure class="sample-image" data-lightbox>
         <img src="assets/samples/pouch-food-snacks.jpg" alt="Flexible laminated pouches for food and snacks">
         <figcaption>
           <span>FOOD &amp; SNACKS</span>
           <b>Namkeen, Chips &amp; Bakery</b>
         </figcaption>
+        <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
       </figure>
 
-      <figure class="sample-image">
+      <figure class="sample-image" data-lightbox>
         <img src="assets/samples/pouch-spices-groceries.jpg" alt="Moisture-barrier pouches for spices and dry goods">
         <figcaption>
           <span>SPICES &amp; GROCERY</span>
           <b>Aroma &amp; Moisture Barrier</b>
         </figcaption>
+        <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
       </figure>
 
-      <figure class="sample-image">
+      <figure class="sample-image" data-lightbox>
         <img src="assets/samples/pouch-detergent-household.jpg" alt="Detergent and washing powder laminated packaging">
         <figcaption>
           <span>HOUSEHOLD CARE</span>
           <b>Washing Powder &amp; Cleaners</b>
         </figcaption>
+        <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
       </figure>
 
-      <figure class="sample-image">
+      <figure class="sample-image" data-lightbox>
         <img src="assets/samples/pouch-agro-industrial.jpg" alt="Heavy-duty laminated packaging for fertilizers and industrial products">
         <figcaption>
           <span>AGRO &amp; INDUSTRIAL</span>
           <b>Fertilizers &amp; Chemical Goods</b>
         </figcaption>
+        <span class="zoom-icon" aria-label="Click to enlarge">🔍</span>
       </figure>
     </div>
   </div>
@@ -249,6 +257,20 @@
   </div>
 </section>
 </main>
+
+<!-- Lightbox Modal Dialog -->
+<div id="lightbox-modal" class="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="lightbox-backdrop"></div>
+  <div class="lightbox-content">
+    <button class="lightbox-close" aria-label="Close modal">&times;</button>
+    <div class="lightbox-image-wrap">
+      <img id="lightbox-img" src="" alt="Popup preview">
+    </div>
+    <div class="lightbox-details" id="lightbox-details">
+      <!-- Injected dynamically via script.js -->
+    </div>
+  </div>
+</div>
 
 <footer><div class="container footer"><div class="brand footer-brand"><img src="assets/logo.svg" alt="Lalit logo"><span>Lalit Enterprises</span></div><p>© <span id="year"></span> Lalit Enterprises · M-189, MIDC, Jalgaon, Maharashtra</p></div></footer>
 <script src="script.js"></script>
