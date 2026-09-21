@@ -39,10 +39,16 @@ nav a:not(.nav-cta):hover{color:var(--red)}
 .stats-grid span{font-size:11px;text-transform:uppercase;letter-spacing:.12em;opacity:.8}
 .section{padding:105px 0}
 .section-tint{background:var(--tint)}
-.two-col{display:grid;grid-template-columns:.8fr 1.2fr;gap:100px}
+.two-col{display:grid;grid-template-columns:.85fr 1.15fr;gap:90px}
 .section h2{font-size:clamp(34px,4vw,52px);line-height:1.05;letter-spacing:-.04em;margin:0 0 25px}
 .prose{color:#57534f;font-size:16px}
 .prose p{margin:0 0 20px}
+
+/* Vision Box Component */
+.vision-card{margin-top:35px;background:var(--tint);border:1px solid var(--line);border-left:4px solid var(--red);border-radius:6px;padding:24px 26px}
+.vision-tag{display:inline-block;font-size:10px;font-weight:850;letter-spacing:.16em;color:var(--red);margin-bottom:12px}
+.vision-quote{margin:0;font-size:15px;font-style:italic;line-height:1.65;color:#333;font-weight:500}
+
 .timeline{margin-top:55px;border-left:1px solid #d5cdc6}
 .timeline article{display:grid;grid-template-columns:120px 1fr;gap:25px;padding:0 0 35px 30px;position:relative}
 .timeline article:before{content:"";width:9px;height:9px;background:var(--red);border-radius:50%;position:absolute;left:-5px;top:8px}
